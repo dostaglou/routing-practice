@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 // ActiveClassName="my-class-name"
 const Header = () => (
   <header>
-    <span className="icn-logo"><i className="material-icons">code</i></span>
+    <span className="icn-logo"><i className="material-icons"></i></span>
     <ul className="main-nav">
       <li><NavLink exact to="/">Home</NavLink></li>
       <li><NavLink exact to="/about">About</NavLink></li>
