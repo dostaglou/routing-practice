@@ -8,6 +8,7 @@ import Header from './Header'
 import Teachers from './Teachers'
 import Courses from './Courses'
 import NotFound from './NotFound'
+import Featured from './Featured'
 const App = () => (
   <BrowserRouter>
     <div className="container">
@@ -19,9 +20,10 @@ const App = () => (
         <Route
           path="/about"
           render={ () => <About title="About" /> } />
-        <Route
+        <Route exact
           path="/teachers"
           component={Teachers} />
+        <Route path="/teachers/:topic/:name" component={Featured}/>
         <Route
           path="/courses"
           component={Courses} />
